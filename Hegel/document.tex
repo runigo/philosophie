@@ -1,0 +1,72 @@
+\documentclass[12pt, a4paper]{report}
+%====================== PACKAGES ======================
+\usepackage[french]{babel}
+
+\frenchbsetup{StandardLists=true}
+\usepackage{enumitem}
+\usepackage{pifont}
+\usepackage[utf8x]{inputenc}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{url}
+\usepackage[pdfborder=0]{hyperref}
+\hypersetup{
+	colorlinks = true
+	}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{multicol}
+\setlength{\columnsep}{50pt}
+\usepackage{setspace}
+\usepackage{abstract}
+\usepackage[T1]{fontenc}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage{subfig}
+\usepackage{pdfpages}
+\usepackage{verbatim}
+\usepackage{appendix}
+\usepackage{comment}
+\usepackage{xcolor}
+%====================== INFORMATION ET REGLES ======================
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+\hypersetup{
+pdfauthor = {Stephan Runigo},
+pdftitle = {Documentation},
+pdfsubject = {Documentation},
+pdfkeywords = {Document},
+pdfstartview={FitH}}
+%======================== DEBUT DU DOCUMENT ========================
+\begin{document}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\input{./presentation/presentation.tex}
+\tableofcontents
+\thispagestyle{empty}
+\setcounter{page}{0}
+\renewcommand{\arraystretch}{1.5}
+%====================== INCLUSION DES CHAPITRES ======================
+~
+\thispagestyle{empty}
+\setcounter{page}{0}
+\newpage
+%
+\input{./la-philosophie/la-philosophie.tex}
+%
+\input{./les-philosophes/les-philosophes.tex}
+%
+%====================== INCLUSION DE LA BIBLIOGRAPHIE ======================
+\nocite{*}
+%
+\bibliographystyle{plain}
+%
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Bibliographie}
+\bibliography{bibliographie.bib}
+%
+%====================== FIN DU DOCUMENT ======================
+%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
