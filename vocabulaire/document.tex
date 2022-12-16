@@ -85,7 +85,10 @@ pdfkeywords = {Document},	% Mots-clefs
 pdfstartview={FitH}}	% ajuste la page à la largeur de l'écran
 %pdfcreator = {MikTeX},% Logiciel qui a crée le document
 %pdfproducer = {} % Société avec produit le logiciel
-
+%======================== DEFINITION COMMANDES ========================
+\newcommand{\si}[1]{\textsf{\textit {#1}}}
+\newcommand{\ib}[1]{\item {\bf #1}}
+\newcommand{\bi}[1]{\textbf{\textit {#1}}}
 %======================== DEBUT DU DOCUMENT ========================
 %
 \begin{document}
@@ -96,7 +99,6 @@ pdfstartview={FitH}}	% ajuste la page à la largeur de l'écran
 % Titre, résumé, ... %
 \input{./presentation/presentation.tex}
 \input{./intro/intro.tex}
-\input{./dico/dico.tex}
 %
 % Table des matières
 \tableofcontents
@@ -114,7 +116,7 @@ pdfstartview={FitH}}	% ajuste la page à la largeur de l'écran
 \setcounter{page}{0}
 \newpage
 %
-\input{./dico/A.tex}
+\input{./dico/dico.tex}
 %
 %\input{./chapitre2/chapitre2.tex}
 %
