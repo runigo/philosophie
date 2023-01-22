@@ -84,6 +84,11 @@ pdfkeywords = {Document},	% Mots-clefs
 pdfstartview={FitH}}	% ajuste la page à la largeur de l'écran
 %pdfcreator = {MikTeX},% Logiciel qui a crée le document
 %pdfproducer = {} % Société avec produit le logiciel
+%======================== DEFINITION COMMANDES ========================
+\newcommand{\si}[1]{\textsf{\textit {#1}}}
+\newcommand{\fsb}[1]{\textsf{\textbf {\footnotesize #1}}}
+\newcommand{\ib}[1]{\item {\bf #1}}
+\newcommand{\bi}[1]{\textbf{\textit {#1}}}
 
 %======================== DEBUT DU DOCUMENT ========================
 %
@@ -108,13 +113,13 @@ pdfstartview={FitH}}	% ajuste la page à la largeur de l'écran
 \setcounter{page}{0}
 \newpage
 %
+\input{./vocabulaire/vocabulaire.tex}
+%
 \input{./croyance/croyance.tex}
 %
 \input{./opinion/opinion.tex}
 %
 \input{./foi/foi.tex}
-%
-\input{./verite/verite.tex}
 %
 \input{./annexe/annexe.tex}
 %
