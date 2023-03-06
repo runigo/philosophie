@@ -5,83 +5,51 @@
 \frenchbsetup{StandardLists=true}
 \usepackage{enumitem}
 \usepackage{pifont}
-
 \usepackage[utf8x]{inputenc}
-
 \usepackage{float}
-\usepackage{amsmath}
-\DeclareMathOperator{\dt}{dt}
 \usepackage{graphicx}
-
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage{url}
-
 \usepackage[pdfborder=0]{hyperref}
 \hypersetup{
 	colorlinks = true
 	}
-
 \usepackage{array}
 \usepackage{tabularx}
 \usepackage{multirow}
 \usepackage{multicol}
 \setlength{\columnsep}{50pt}
-
 \usepackage{setspace}
-
 \usepackage{abstract}
-
 \usepackage[T1]{fontenc}
 \usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
-
 \usepackage{subfig}
-
 \usepackage{pdfpages}
-
 \usepackage{verbatim}
-
 \usepackage{appendix}
-
 \usepackage{comment}
-
 \usepackage{xcolor}
-
 %====================== INFORMATION ET REGLES ======================
-
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{4}
 
 \hypersetup{
 pdfauthor = {Stephan Runigo},
-pdftitle = {Cuvillier 1},
-pdfsubject = {Cours de philosophie},		% Sujet
-pdfkeywords = {Philosophie},	% Mots-clefs
-pdfstartview={FitH}}	% ajuste la page à la largeur de l'écran
-%pdfcreator = {MikTeX},% Logiciel qui a crée le document
-%pdfproducer = {} % Société avec produit le logiciel
-
+pdftitle = {Documentation},
+pdfsubject = {Documentation},
+pdfkeywords = {Document},
+pdfstartview={FitH}}
 %======================== DEBUT DU DOCUMENT ========================
-%
 \begin{document}
-%
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
-%
-% Titre, résumé, ... %
 \input{./presentation/presentation.tex}
-%
-% Table des matières
 \tableofcontents
 \thispagestyle{empty}
 \setcounter{page}{0}
-%
-%espacement entre les lignes des tableaux
 \renewcommand{\arraystretch}{1.5}
-%
 %====================== INCLUSION DES CHAPITRES ======================
-%
 ~
 \thispagestyle{empty}
-%recommencer la numérotation des pages à "1"
 \setcounter{page}{0}
 \newpage
 %
@@ -90,14 +58,10 @@ pdfstartview={FitH}}	% ajuste la page à la largeur de l'écran
 \input{./les-philosophes/les-philosophes.tex}
 %
 %====================== INCLUSION DE LA BIBLIOGRAPHIE ======================
-%
-%récupérer les citation avec "/footnotemark" : 
 \nocite{*}
 %
-% choix du style de la biblio
 \bibliographystyle{plain}
 %
-% inclusion de la biblio
 \cleardoublepage
 \addcontentsline{toc}{chapter}{Bibliographie}
 \bibliography{bibliographie.bib}
